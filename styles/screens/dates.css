@@ -1,0 +1,21 @@
+.dates {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 700;
+  color: var(--orange);
+  text-shadow: var(--text-shadow);
+}
+.watchapp {
+  font-size: 120px;
+}
+.weatherplate {
+  margin: 50px 0px 10px 0px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+.weatherplate span {
+  margin: 0px 30px;
+}

@@ -1,0 +1,67 @@
+.todoform {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.loginform {
+  padding: 30px 0px 30px 30px;
+}
+.loginform * {
+  font-size: 30px;
+  color: var(--orange);
+}
+
+.loginform input {
+  margin-right: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  outline: none;
+}
+.loginform input:focus-within,
+input:hover {
+  transition: 0.3s ease-in-out;
+  padding: 15px 25px;
+  border-bottom: 2px solid var(--red);
+}
+
+.loginform input::placeholder {
+  color: var(--orange);
+  padding-left: 10px;
+  text-shadow: var(--text-shadow);
+}
+.loginform button {
+  border-radius: 25px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-shadow: var(--text-shadow);
+}
+.loginform button:hover {
+  transition: 0.3s ease-in-out;
+  padding: 15px 25px;
+  animation: textcolor 1s ease-in-out infinite;
+}
+
+.loginform h1 {
+  font-size: 70px;
+  color: var(--orange);
+  text-shadow: var(--text-shadow);
+}
+
+@keyframes textcolor {
+  0% {
+    color: var(--blue);
+    border: 2px solid var(--red);
+  }
+  50% {
+    color: var(--white);
+    border: 2px solid var(--white);
+  }
+  100% {
+    color: var(--red);
+    border: 2px solid var(--blue);
+  }
+}

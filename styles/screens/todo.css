@@ -1,0 +1,83 @@
+.todo {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo input {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  outline: none;
+  color: var(--white);
+  font-size: 25px;
+  animation: inputlight 3s ease-in-out infinite;
+}
+.todo input::placeholder {
+  color: var(--white);
+  padding-left: 10px;
+  text-shadow: var(--text-shadow);
+}
+.todo input:hover {
+  transition: 0.3s ease-in-out;
+  padding: 15px 25px;
+}
+
+.todo ul {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 25px;
+}
+.todo ul > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  color: var(--white);
+  text-shadow: var(--text-shadow);
+}
+.todo ul > li > span {
+  letter-spacing: 3px;
+}
+.todo button {
+  color: var(--red);
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 20px;
+}
+.todo button:hover {
+  animation: buttonalert 0.4s infinite;
+}
+
+@keyframes buttonalert {
+  0% {
+    color: var(--red);
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: var(--orange);
+  }
+}
+
+@keyframes inputlight {
+  0% {
+    border: 2px solid var(--white);
+  }
+  25% {
+    border: 2px solid var(--orange);
+  }
+  50% {
+    border: 2px solid var(--red);
+  }
+  75% {
+    border: 2px solid var(--orange);
+  }
+  100% {
+    border: 2px solid var(--white);
+  }
+}

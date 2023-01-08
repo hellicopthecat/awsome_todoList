@@ -22,7 +22,7 @@ function addTodo(whatTodo) {
   const span = document.createElement("span");
   span.innerText = whatTodo.text;
   const btn = document.createElement("button");
-  btn.innerText = " ❌ DELETE ❌ ";
+  btn.innerText = "DELETE";
   btn.addEventListener("click", deleteTodo);
 
   todoList.appendChild(li);

@@ -1,3 +1,51 @@
+@import "reset.css";
+@import "variable.css";
+/* screens */
+@import "screens/loginform.css";
+@import "screens/todo.css";
+@import "screens/todayqoute.css";
+@import "screens/dates.css";
+@import "screens/footer.css";
+
+@font-face {
+  font-family: "LAB디지털";
+  src: url("../font/LAB디지털.woff") format("woff");
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "LAB디지털";
+}
+a {
+  color: inherit;
+}
+img {
+  width: 100%;
+  height: 150vh;
+  opacity: 0.8;
+}
+button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+input::placeholder,
+button {
+  font-family: "LAB디지털";
+}
 .hidden {
   display: none;
+}
+
+.imgplate {
+  position: relative;
+}
+
+.quotetodo {
+  display: grid;
+  grid-template-columns: 4fr 1fr 4fr;
+  margin: 30px;
+  align-items: center;
+  height: 30vh;
 }

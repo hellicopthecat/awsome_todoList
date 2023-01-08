@@ -10,23 +10,79 @@
     <title>Document</title>
   </head>
   <body>
-    <form id="login" class="hidden">
-      <input type="text" placeholder="Write on Your Name" required />
-      <button>WRITE ON MY NAME</button>
-    </form>
-    <h1 id="hello" class="hidden"></h1>
-    <h2 id="clock">00 : 00 : 00</h2>
+    <div class="imgplate"></div>
+    <div class="todoform">
+      <div class="loginform">
+        <form id="login" class="hidden">
+          <input
+            type="text"
+            placeholder="Write on Your Name"
+            maxlength="15"
+            required
+          />
+          <button>WRITE ON MY NAME</button>
+        </form>
+        <h1 id="hello" class="hidden"></h1>
+      </div>
 
-    <form action="" id="todo__form">
-      <input type="text" placeholder="Write on What to do" />
-    </form>
-    <ul id="todo__list"></ul>
-    <h3 id="weather"></h3>
-    <h2 id="place"></h2>
+      <div class="dates">
+        <h2 class="watchapp" id="clock">00 : 00 : 00</h2>
+        <div class="weatherplate">
+          <h3 id="weather"></h3>
+          <span> / </span>
+          <h2 id="place"></h2>
+        </div>
+      </div>
+
+      <div class="quotetodo">
+        <div class="todayquote">
+          <h1 id="quotes"></h1>
+          <h2 id="author"></h2>
+        </div>
+        <div></div>
+        <div class="todo">
+          <form id="todo__form">
+            <input
+              type="text"
+              placeholder="Write on What to do"
+              maxlength="30"
+            />
+          </form>
+          <ul id="todo__list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foot">
+        <span>SUPER AWSOME TODOLIST</span>
+      </div>
+
+      <div class="insta">
+        <a href="https://www.instagram.com/hellicat_analogfilm/">
+          <i class="fa-brands fa-instagram">
+            <span>hellicat_analogfilm</span>
+          </i>
+        </a>
+      </div>
+      <div class="email">
+        <i class="fa-regular fa-envelope">
+          <span>click to copy --> </span
+          ><span id="adress">jhccop@naver.com</span>
+        </i>
+      </div>
+    </footer>
 
     <script src="src/hello.js"></script>
     <script src="src/clock.js"></script>
     <script src="src/todo.js"></script>
     <script src="src/weather.js"></script>
+    <script src="src/quotes.js"></script>
+    <script src="src/background.js"></script>
+    <script src="src/copy.js"></script>
+    <script
+      src="https://kit.fontawesome.com/86e4e86e0d.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

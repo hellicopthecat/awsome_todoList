@@ -1,0 +1,8 @@
+:root {
+  --blue: #0004ff;
+  --orange: #cc8444;
+  --red: rgb(251, 38, 0);
+  --white: rgb(238, 218, 200);
+  --text-shadow: 0px 0px 5px white, 0 0 1em var(--orange),
+    0 0 0.1em var(--orange);
+}

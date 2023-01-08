@@ -1,0 +1,18 @@
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 50px;
+  color: var(--orange);
+  display: flex;
+  justify-content: space-between;
+}
+.insta span,
+.email span {
+  margin-left: 10px;
+  font-family: "LAB디지털";
+}
+.email i > span:nth-child(2) {
+  cursor: pointer;
+}
